@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Copy Of Netflix</title>
+  </head>
+  <body>
+    <!-- Navbar Of Website -->
+    <div class="topHeadOfWebsite">
+      <div class="navMenu">
+        <span id="navMenu">☰</span>
+      </div>
+      <img
+        id="logo"
+        src="https://raw.githubusercontent.com/Abhisek730/netflix-clone-website/main/NetflixLog.png"
+        alt=""
+      />
+
+      <div class="navbarBox">
+        <nav>
+          <ul class="LisBoss">
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>Latest</li>
+            <li>My List</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="searchInput">
+        <input
+          type="search"
+          name="search"
+          id="searchEngine"
+          placeholder="Search Anything..."
+        />
+        <div class="searchingResult">
+          hi
+          <div id="listOfMovies">LOL</div>
+        </div>
+      </div>
+      <span class="search">
+        <img src="/Icons/search-white.png" alt="" />
+      </span>
+    </div>
+    <!-- END Of Navbar of website -->
+
+    <!-- Starts of Website Poster -->
+    <div id="mainPartOfPoster">
+      <div class="innerBodyOfPoster">
+        <div>
+          <h1 id="titleOfSomething"></h1>
+        </div>
+        <div class="buttons">
+          <button class="overBodyOfButton">
+            <i class="fas fa-play"></i>&nbsp;Play
+          </button>
+          <button class="overBodyOfButton">
+            <i class="fas fa-plus"></i>&nbsp;Add In List
+          </button>
+        </div>
+        <div class="description">
+          <p id="descriptionOfSomething">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Ends of Website Poster -->
+
+    <!-- Netflix Original Row -->
+    <h1 class="trending">Netflix Original</h1>
+    <div class="mainOfTrendingPage">
+      <i
+        id="leftArrow"
+        class="fas fa-chevron-left arrow"
+        alt="Left Arrow"
+        onclick="leftSideNetflix()"
+      ></i>
+      <div class="innerMainDiv"></div>
+      <i
+        id="rightArrow"
+        class="fas fa-chevron-right arrow"
+        alt="Right Arrow"
+        onclick="rightSideNetflix()"
+      ></i>
+    </div>
+
+    <!-- Trending Row Below  -->
+    <h1 class="trending">Trending</h1>
+    <div class="mainOfTrendingOriginalPage">
+      <i
+        id="leftArrow1"
+        class="fas fa-chevron-left arrow"
+        alt="Left Arrow"
+        onclick="leftSideTrending()"
+      ></i>
+      <div class="innerMainDiv1"></div>
+      <i
+        id="rightArrow1"
+        class="fas fa-chevron-right arrow"
+        alt="Right Arrow"
+        onclick="rightSideTrending()"
+      ></i>
+    </div>
+
+    <!-- Top Rated -->
+    <h1 class="trending">Top Rated</h1>
+    <div class="mainOfTopRatedPage">
+      <i
+        id="leftArrow2"
+        class="fas fa-chevron-left arrow"
+        alt="Left Arrow"
+        onclick="leftSideTopRated()"
+      ></i>
+      <div class="innerMainDiv2"></div>
+      <i
+        id="rightArrow2"
+        class="fas fa-chevron-right arrow"
+        alt="Right Arrow"
+        onclick="rightSideTopRated()"
+      ></i>
+    </div>
+
+    <!-- Action Movies -->
+
+    <h1 class="trending">Action Movies</h1>
+    <div class="mainOfActionMoviesPage">
+      <i
+        id="leftArrow3"
+        class="fas fa-chevron-left arrow"
+        alt="Left Arrow"
+        onclick="leftSideAction()"
+      ></i>
+      <div class="innerMainDiv3"></div>
+      <i
+        id="rightArrow3"
+        class="fas fa-chevron-right arrow"
+        alt="Right Arrow"
+        onclick="rightSideAction()"
+      ></i>
+    </div>
+
+    <!-- Comedy Movies -->
+
+    <h1 class="trending">Comedy Movies</h1>
+    <div class="mainOfComedyMoviesPage">
+      <i
+        id="leftArrow4"
+        class="fas fa-chevron-left arrow"
+        alt="Left Arrow"
+        onclick="leftSideComedy()"
+      ></i>
+      <div class="innerMainDiv4"></div>
+      <i
+        id="rightArrow4"
+        class="fas fa-chevron-right arrow"
+        alt="Right Arrow"
+        onclick="rightSideComedy()"
+      ></i>
+    </div>
+
+    <!-- Horror Movies -->
+
+    <h1 class="trending">Horror Movies</h1>
+    <div class="mainOfHorrorMoviesPage">
+      <i
+        id="leftArrow5"
+        class="fas fa-chevron-left arrow"
+        alt="Left Arrow"
+        onclick="leftSideHorror()"
+      ></i>
+      <div class="innerMainDiv5"></div>
+      <i
+        id="rightArrow5"
+        class="fas fa-chevron-right arrow"
+        alt="Right Arrow"
+        onclick="rightSideHorror()"
+      ></i>
+    </div>
+
+    <!-- Romance Movies -->
+
+    <h1 class="trending">Romance Movies</h1>
+    <div class="mainOfRomanceMoviesPage">
+      <i
+        id="leftArrow6"
+        class="fas fa-chevron-left arrow"
+        alt="Left Arrow"
+        onclick="leftSideRomance()"
+      ></i>
+      <div class="innerMainDiv6"></div>
+      <i
+        id="rightArrow6"
+        class="fas fa-chevron-right arrow"
+        alt="Right Arrow"
+        onclick="rightSideRomance()"
+      ></i>
+    </div>
+
+    <!-- Documentaries Movies -->
+
+    <h1 class="trending">Documentaries Movies</h1>
+    <div class="mainOfDocumentariesMoviesPage">
+      <i
+        id="leftArrow7"
+        class="fas fa-chevron-left arrow"
+        alt="Left Arrow"
+        onclick="leftSideDocumentaries()"
+      ></i>
+      <div class="innerMainDiv7"></div>
+      <i
+        id="rightArrow7"
+        class="fas fa-chevron-right arrow"
+        alt="Right Arrow"
+        onclick="rightSideDocumentaries()"
+      ></i>
+    </div>
+
+    <!-- Shows Detail Page Code Below -->
+
+    <div class="mainOfShowsDetail">
+      <iframe
+        id="trailer"
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="pageOfDetails">
+        <div id="mainPartOfPosterInner">
+          <i id="cut" class="fas fa-times"></i>
+          <div class="innerBodyOfPoster1">
+            <div>
+              <h1 id="titleOfSomethingInner">Title</h1>
+            </div>
+            <div class="ratting">
+              <span id="showsRatting"></span>
+            </div>
+            <div class="buttons1">
+              <div class="justButton">
+                <button class="overBodyOfButton1">
+                  <i class="fas fa-play"></i>&nbsp;Play
+                </button>
+                <button class="overBodyOfButton">
+                  <i class="fas fa-plus"></i>&nbsp;Add In List
+                </button>
+              </div>
+
+              <div class="likeOrDislike">
+                <div class="like same">
+                  <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="dislike same">
+                  <i class="fas fa-thumbs-down"></i>
+                </div>
+              </div>
+
+              <!-- after done all above work -->
+            </div>
+            <div class="description">
+              <p id="descriptionOfSomethingInner">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="trailer"></div> -->
+    <script src="index.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/46d39d7ced.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- I have to have all right arrow to other arrow design. Design name is "chevron-right" -->

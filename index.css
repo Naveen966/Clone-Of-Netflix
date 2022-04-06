@@ -1,0 +1,784 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #010101;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  color: skyblue;
+  border-radius: 5px;
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbarBox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.LisBoss {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  color: white;
+  font-weight: bolder;
+}
+.LisBoss li {
+  padding-left: 1rem;
+  font-size: 1.3vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+.topHeadOfWebsite {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: black;
+  height: 5rem;
+}
+
+#logo {
+  width: 8vw;
+  cursor: pointer;
+  margin-left: 2.5rem;
+}
+
+#mainPartOfPoster {
+  width: 100%;
+  height: 51vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgb(0 0 0) 0px 54px 55px, inset rgb(0 0 0) -1px -20px 30px 10px,
+    hsl(0deg 0% 0%) 1px 20px 6px, rgb(0 0 0 / 99%) 0px 20px 20px,
+    inset rgb(16 6 6) 1px -20px 50px;
+}
+
+.innerBodyOfPoster {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  padding: 0px 3%;
+  color: white;
+}
+
+#titleOfSomething {
+  font-size: 2.8vw;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+#descriptionOfSomething {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+.buttons button {
+  border: none;
+  width: 6rem;
+  border-radius: 4px;
+  height: 2rem;
+  background: #000000a3;
+  color: whitesmoke;
+  font-size: 1.1vw;
+  font-family: sans-serif;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+#navMenu {
+  margin-left: 2rem;
+  display: none;
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: all 0.7s ease-in-out;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  width: 1%;
+  display: block;
+  justify-content: center;
+  margin-right: 2.5rem;
+  position: absolute;
+  right: 0;
+}
+
+.search img {
+  width: 1.7rem;
+}
+
+@media screen and (max-width: 1314px) {
+  .LisBoss li {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .LisBoss li {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 3;
+    padding-left: 0;
+    font-size: 1.3rem;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .LisBoss {
+    display: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .LisBoss1 {
+    display: block;
+    justify-content: space-evenly;
+    list-style: none;
+    left: 0;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    background: rgb(255, 0, 51);
+    top: 7vh;
+    width: 100%;
+    text-align: center;
+    height: 55vh;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .topHeadOfWebsite {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  #navMenu {
+    display: block;
+    color: white;
+  }
+
+  #logo {
+    width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #titleOfSomething {
+    font-size: 1.9rem;
+    font-family: cursive;
+  }
+
+  #descriptionOfSomething {
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .buttons button {
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+  }
+
+  .innerBodyOfPoster {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 62%;
+    padding: 0px 3%;
+    color: white;
+  }
+
+  .search {
+    width: 1%;
+    display: flex;
+    justify-content: center;
+    margin-right: 2.5rem;
+    position: static;
+  }
+
+  .search img {
+    width: 1.3rem;
+  }
+}
+
+@media screen and (width: 720px) and (height: 1600px) {
+  .navMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  .LisBoss li {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 3;
+    padding-left: 0;
+    font-size: 6.3vw;
+  }
+
+  .topHeadOfWebsite {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+  }
+
+  #logo {
+    width: 12rem;
+    margin-right: auto;
+    margin-right: auto;
+  }
+
+  .search img {
+    width: 3.7rem;
+  }
+  .search {
+    width: 1%;
+    display: flex;
+    justify-content: center;
+    margin-right: 3.6rem;
+    position: static;
+  }
+
+  .buttons button {
+    border: none;
+    width: 12rem;
+    border-radius: 23px;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    transition: all ease-in-out 0.3s;
+  }
+
+  #descriptionOfSomething {
+    font-size: 1.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  #titleOfSomething {
+    font-size: 3.9rem;
+    font-family: cursive;
+  }
+}
+
+.searchInput {
+  position: absolute;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 12%;
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.searchInput1 {
+  display: block;
+  position: absolute;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 12%;
+  transition: all 0.2s ease-in-out;
+}
+
+#searchEngine {
+  width: 77%;
+  height: 34%;
+  border-radius: 3px;
+  border: none;
+  position: absolute;
+  right: 5%;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Row of trending page code below */
+
+.trending {
+  margin-top: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  margin-left: 1%;
+  font-size: 2.3vw;
+  cursor: pointer;
+}
+
+.mainOfTrendingPage,
+.mainOfTrendingOriginalPage,
+.mainOfTopRatedPage,
+.mainOfActionMoviesPage,
+.mainOfComedyMoviesPage,
+.mainOfHorrorMoviesPage,
+.mainOfRomanceMoviesPage,
+.mainOfDocumentariesMoviesPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid; */
+  /* height: 14rem; */
+}
+
+.innerMainDiv,
+.innerMainDiv1,
+.innerMainDiv2,
+.innerMainDiv3,
+.innerMainDiv4,
+.innerMainDiv5,
+.innerMainDiv6,
+.innerMainDiv7 {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.innerMainDiv::-webkit-scrollbar,
+.innerMainDiv1::-webkit-scrollbar,
+.innerMainDiv2::-webkit-scrollbar,
+.innerMainDiv3::-webkit-scrollbar,
+.innerMainDiv4::-webkit-scrollbar,
+.innerMainDiv5::-webkit-scrollbar,
+.innerMainDiv6::-webkit-scrollbar,
+.innerMainDiv7::-webkit-scrollbar,
+.innerMainDiv8::-webkit-scrollbar {
+  display: none;
+}
+
+.tittleOfMovie {
+  /* height: 28vh; */
+  /* width: 27vw; */
+  height: 176px;
+  width: 409px;
+  text-align: center;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#leftArrow,
+#rightArrow,
+#leftArrow1,
+#rightArrow1,
+#leftArrow2,
+#rightArrow2,
+#leftArrow3,
+#rightArrow3,
+#leftArrow4,
+#rightArrow4,
+#leftArrow5,
+#rightArrow5,
+#leftArrow6,
+#rightArrow6,
+#leftArrow7,
+#rightArrow7 {
+  font-size: 3rem;
+  position: absolute;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+#leftArrow {
+  left: 0;
+}
+
+#rightArrow,
+#rightArrow1,
+#rightArrow2,
+#rightArrow3,
+#rightArrow4,
+#rightArrow5,
+#rightArrow6,
+#rightArrow7 {
+  right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .tittleOfMovie {
+    height: 99px;
+    width: 236px;
+    text-align: center;
+  }
+
+  .trending {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+
+  #movieTittle {
+    font-size: 1rem;
+  }
+  #leftArrow,
+  #rightArrow,
+  #leftArrow1,
+  #rightArrow1,
+  #leftArrow2,
+  #rightArrow2,
+  #leftArrow3,
+  #rightArrow3,
+  #leftArrow4,
+  #rightArrow4,
+  #leftArrow5,
+  #rightArrow5,
+  #leftArrow6,
+  #rightArrow6,
+  #leftArrow7,
+  #rightArrow7 {
+    display: none;
+  }
+}
+
+@media screen and (width: 720px) and (height: 1600px) {
+  .tittleOfMovie {
+    height: 180px;
+    width: 357px;
+    text-align: center;
+  }
+
+  #movieTittle {
+    font-size: 1rem;
+  }
+
+  .trending {
+    font-size: 2.3rem;
+    margin-left: 1rem;
+  }
+
+  #leftArrow,
+  #rightArrow,
+  #leftArrow1,
+  #rightArrow1,
+  #leftArrow2,
+  #rightArrow2,
+  #leftArrow3,
+  #rightArrow3,
+  #leftArrow4,
+  #rightArrow4,
+  #leftArrow5,
+  #rightArrow5,
+  #leftArrow6,
+  #rightArrow6,
+  #leftArrow7,
+  #rightArrow7 {
+    display: none;
+  }
+}
+
+@media screen and (width: 393px) and (height: 851px) {
+  .tittleOfMovie {
+    height: 115px;
+    width: 249px;
+    text-align: center;
+  }
+
+  .mainOfTrendingPage,
+  .mainOfTrendingOriginalPage,
+  .mainOfTopRatedPage,
+  .mainOfActionMoviesPage,
+  .mainOfComedyMoviesPage,
+  .mainOfHorrorMoviesPage,
+  .mainOfRomanceMoviesPage,
+  .mainOfDocumentariesMoviesPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+  }
+
+  #movieTittle {
+    font-size: 1rem;
+  }
+
+  .trending {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+  }
+
+  #leftArrow,
+  #rightArrow,
+  #leftArrow1,
+  #rightArrow1,
+  #leftArrow2,
+  #rightArrow2,
+  #leftArrow3,
+  #rightArrow3,
+  #leftArrow4,
+  #rightArrow4,
+  #leftArrow5,
+  #rightArrow5,
+  #leftArrow6,
+  #rightArrow6,
+  #leftArrow7,
+  #rightArrow7 {
+    display: none;
+  }
+}
+
+/*  Details Page Css Code Below */
+
+.mainOfShowsDetail {
+  position: fixed;
+  top: 30%;
+  /* background: blueviolet; */
+  /* background: #ff000000; */
+  width: 100%;
+  display: none;
+}
+
+.innerBodyOfPoster1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  padding: 0px 3%;
+  color: white;
+}
+
+#mainPartOfPosterInner {
+  width: 100%;
+  height: 51vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#titleOfSomethingInner {
+  font-size: 2.6vw;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+#descriptionOfSomethingInner {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+#showsRatting {
+  font-size: 1.3rem;
+  color: goldenrod;
+}
+
+.buttons1 button {
+  border: none;
+  width: 6rem;
+  border-radius: 4px;
+  height: 2rem;
+  background: red;
+  color: whitesmoke;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.buttons1 {
+  cursor: pointer;
+}
+
+.buttons1 button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.likeOrDislike {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.same {
+  margin-left: 1vw;
+  margin-top: 2vh;
+}
+
+#cut {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2rem;
+  color: white;
+  transform: rotate(359deg);
+  transition: all 0.7s ease-out;
+}
+
+@media screen and (max-width: 800px) {
+  #BGImg {
+    width: 15rem;
+  }
+
+  #cut {
+    left: 10px;
+  }
+
+  #mainPartOfPosterInner {
+    width: 100%;
+    height: 50vh;
+  }
+
+  #titleOfSomethingInner {
+    font-size: 6.6vw;
+    text-align: center;
+    font-family: cursive;
+    cursor: pointer;
+  }
+
+  .justButton {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+    width: 95%;
+  }
+
+  .buttons1 button {
+    border: none;
+    width: 6rem;
+    border-radius: 4px;
+    height: 2rem;
+    background: #010000;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+
+  .likeOrDislike {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #descriptionOfSomethingInner {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .mainOfShowsDetail {
+    position: fixed;
+    top: 0;
+    background: blueviolet;
+    width: 100%;
+    display: none;
+  }
+
+  .innerBodyOfPoster1 {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    margin: 0;
+    position: fixed;
+    background: linear-gradient(1deg, red, black);
+    box-shadow: rgb(171 0 255) 0px 54px 55px, rgb(0 0 0) 0px -12px 30px 10px,
+      hsl(0deg 0% 0%) -5px -20px 6px, rgb(0 0 0 / 99%) 1px -20px 13px,
+      rgb(16 6 6) 0px -20px 50px;
+    bottom: 0;
+    padding: 0;
+  }
+
+  .ratting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (width: 720px) and (height: 1600px) {
+  #titleOfSomethingInner {
+    font-size: 7.6vw;
+  }
+
+  #showsRatting {
+    font-size: 3.3rem;
+  }
+
+  .buttons1 button {
+    border: none;
+    width: 6rem;
+    border-radius: 4px;
+    height: 5rem;
+    background: #010000;
+    color: whitesmoke;
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-left: 2rem;
+  }
+
+  .likeOrDislike {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  #descriptionOfSomethingInner {
+    font-size: 2rem;
+  }
+
+  #cut {
+    font-size: 5rem;
+    left: 10px;
+  }
+}
+
+#trailer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
